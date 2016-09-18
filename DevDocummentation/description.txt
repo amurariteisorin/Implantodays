@@ -2,7 +2,7 @@ DATABASE: implantodays
 
 
 TABLES: 
-- Users : id, username, password, email, first,last,PHN, NumberOfLogins, LastVist, DateRegistered, 
+- Users : id, username, password, email, first,last,PHN, NumberOfLogins, LastVist, DateRegistered, role
 - Courses: id, name, price, description (html) , image, Start_date, NrOfParticipants, Duration (number), UM (days/months/weeks), 
 - Feedback: id, CursID, rating, UserID, comment
 - Registration: id, userid, courseID, Date_Registered, Payment_Confirmation, 
