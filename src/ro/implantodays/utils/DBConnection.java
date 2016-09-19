@@ -24,16 +24,16 @@ public class DBConnection {
 			  if(conn==null){
 				 
 		    conn =
-		        DriverManager.getConnection("jdbc:mysql://baniimei.online:3306/implantodays?" +
-		                                   "user=root&password=cocolino!");
+		        DriverManager.getConnection("jdbc:mysql://sorio.go.ro:3306/implantodays?" +
+		                                   "user=sorio&password=cocolino");
 				
 		    l.info("Created new DB Connection");
 			  }
 			  if(conn.isClosed()){
 
 				  conn =
-						  DriverManager.getConnection("jdbc:mysql://baniimei.online:3306/implantodays?" +
-                                  "user=root&password=cocolino!");
+						  DriverManager.getConnection("jdbc:mysql://sorio.go.ro:3306/implantodays?" +
+                                  "user=sorio&password=cocolino");
 
 
 				  

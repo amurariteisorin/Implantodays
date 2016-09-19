@@ -10,10 +10,10 @@ public class Validate
       try{
 
 	 //loading drivers for mysql
-         Class.forName("com.mysql.cj.jdbc.Driver");
+         Class.forName("com.mysql.jdbc.Driver");
 
  	 //creating connection with the database 
-         Connection con=DriverManager.getConnection("jdbc:mysql:/ /sorio.go.ro:3306/implantodays","root","cocolino");
+         Connection con=DriverManager.getConnection("jdbc:mysql://sorio.go.ro:3306/implantodays","sorio","cocolino");
          PreparedStatement ps =con.prepareStatement("select * from Users where username=? and password=?");
          ps.setString(2, user);
          ps.setString(3, pass);

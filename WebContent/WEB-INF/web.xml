@@ -21,5 +21,14 @@
     <url-pattern>/Login</url-pattern>
 </servlet-mapping>
  
+  <servlet>
+    <servlet-name>WelcomeServlet</servlet-name>
+    <servlet-class>ro.implantodays.servlets.WelcomeServlet</servlet-class>
+</servlet>
 
+<servlet-mapping>
+    <servlet-name>WelcomeServlet</servlet-name>
+    <url-pattern>/Welcome</url-pattern>
+</servlet-mapping>
+ 
 </web-app>
