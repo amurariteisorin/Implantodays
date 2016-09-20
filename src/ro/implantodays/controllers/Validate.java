@@ -2,28 +2,32 @@ package ro.implantodays.controllers;
 
 import java.sql.*;
 
+import ro.implantodays.utils.DBConnection;
+
 public class Validate
  {
+	
      public static boolean checkUser(String user, String pass) 
      {
-      boolean st =false;
-      try{
-
-	 //loading drivers for mysql
-         Class.forName("com.mysql.jdbc.Driver");
-
+    	 DBConnection c = new DBConnection();
+    	 
  	 //creating connection with the database 
-         Connection con=DriverManager.getConnection("jdbc:mysql://sorio.go.ro:3306/implantodays","sorio","cocolino");
-         PreparedStatement ps =con.prepareStatement("select * from Users where username=? and password=?");
-         ps.setString(2, user);
-         ps.setString(3, pass);
-         ResultSet rs =ps.executeQuery();
-         st = rs.next();
+         Connection con= c.getConnection();
+         PreparedStatement ps;
+		try {
+			ps = con.prepareStatement("select * from Users where username=? and password=?");
+			 ps.setString(1, user);
+	         ps.setString(2, pass);
+	         ResultSet rs =ps.executeQuery();
+	         return  rs.next();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return false;
         
-      }catch(Exception e)
-      {
-          e.printStackTrace();
-      }
-         return st;                 
+        
+     
+                          
   }   
 }

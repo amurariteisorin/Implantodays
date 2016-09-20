@@ -24,7 +24,7 @@ public class DBConnection {
 			  if(conn==null){
 				 
 		    conn =
-		        DriverManager.getConnection("jdbc:mysql://sorio.go.ro:3306/implantodays?" +
+		        DriverManager.getConnection("jdbc:mysql://sorio.go.ro:3306/implantodays?useLegacyDatetimeCode=false&serverTimezone=UTC&" +
 		                                   "user=sorio&password=cocolino");
 				
 		    l.info("Created new DB Connection");
