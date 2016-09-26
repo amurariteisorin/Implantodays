@@ -25,6 +25,14 @@
     <servlet-name>WelcomeServlet</servlet-name>
     <url-pattern>/Welcome</url-pattern>
   </servlet-mapping>
-
+ 
+ <servlet>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>ro.implantodays.servlets.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/Register</url-pattern>
+  </servlet-mapping>
 
 </web-app>

@@ -48,10 +48,10 @@
     <form action="Register" method="post">
       <input type="text" name="username" placeholder="Username"/>
       <input type="password" name="password" placeholder="Password"/>
-      <input type="text" name="FirstName" placeholder="FirstName"/>
-      <input type="text" name="LastName" placeholder="LastName"/>
+      <input type="text" name="first" placeholder="FirstName"/>
+      <input type="text" name="last" placeholder="LastName"/>
       <input type="text" name="email" placeholder="Email"/>
-      <input type="text" name="Mobile" placeholder="Mobile"/>
+      <input type="text" name="phone" placeholder="Mobile"/>
       
       <input type="submit" name="Register" class="login login-submit" value="Register"/>
     </form>

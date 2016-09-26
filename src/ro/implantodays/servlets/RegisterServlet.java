@@ -7,9 +7,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
 import ro.implantodays.utils.DBConnection;
-
 import java.sql.*;  
 /**
  * Servlet implementation class RegisterServlet
@@ -43,24 +41,23 @@ public class RegisterServlet extends HttpServlet {
 		
 		String a=request.getParameter("username");  
 		String b=request.getParameter("password");  
-		String g=request.getParameter("email");  
+		String c=request.getParameter("email");  
 		String d=request.getParameter("first");
 		String e=request.getParameter("last");  
 		String f=request.getParameter("phone");
 		
 		try {
-			DBConnection c = new DBConnection();
-	    	 
-		 	 //creating connection with the database 
-		         Connection con= c.getConnection();
-		         PreparedStatement pst=con.prepareStatement("INSERT INTO Users values(?,?,?,?,?,?)");
+			DBConnection k = new DBConnection();
+	    
+		         Connection con= k.getConnection();
+		         PreparedStatement pst=con.prepareStatement("INSERT INTO Users(username,password,email,first,last,phone) values(?,?,?,?,?,?)");
 		         
-		         pst.setString(2, a);
-		         pst.setString(3, b);
-		         pst.setString(4, g);
-		         pst.setString(5, d);
-		         pst.setString(6, e);
-		         pst.setString(7, f);
+		         pst.setString(1, a);
+		         pst.setString(2, b);
+		         pst.setString(3, c);
+		         pst.setString(4, d);
+		         pst.setString(5, e);
+		         pst.setString(6, f);
 		         
 		         int i =pst.executeUpdate();
 		         
