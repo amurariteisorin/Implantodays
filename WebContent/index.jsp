@@ -11,7 +11,7 @@
     
 <title>ImplantoDays</title>
 </head>
-<body background="img/01.png">
+<body background="img/1.png">
 <div class="header">
 <nav class="navbar navbar-default">
   <div class="container-fluid">
@@ -21,25 +21,17 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span> 
       </button>
-      <a class="navbar-brand" href="#">ImplantoDays</a>
+      <a class="navbar-brand" ><img src="img/logo1.png" style="float:left; padding-top:0px;width:120px;height:30px;padding-bottom:6px;"></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Acasa</a></li>
-        <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Evelimente
-        <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Curs 1</a></li>
-          <li><a href="#">Curs 2</a></li>
-          <li><a href="#">Curs 3</a></li> 
-        </ul>
-      </li>
+        <li class="active"><a href="index.jsp">Acasa</a></li>
+     
+        <li><a href="#">Cursuri</a></li> 
         <li><a href="#">Despre Noi</a></li> 
-        <li><a href="#">SHOP</a></li> 
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="Register.jsp"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
         <li><a href="Login.jsp"><span class="glyphicon glyphicon-log-in"> </span> Login</a></li>
       </ul>
     </div>
