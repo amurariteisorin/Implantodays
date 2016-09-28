@@ -105,3 +105,61 @@ body {
   text-align: center;
   font-size: 12px;
 }
+
+.content {
+ backgrond-color:white;
+ height:350px;
+ weight:400px;
+ 
+ 
+ }
+ 
+ .header {
+	margin:0 auto;
+	padding-top:20px;
+	width:80%;
+	
+}
+ 
+ .isleCarousell {
+ height:300px;
+ width:80%;
+ margin:0 auto;
+ border-radius: 5px;
+ background:#f8f8f8;
+ margin-top:50px;
+ 
+ 
+ }
+ 
+  .isleText {
+ height:490px;
+ width:80%;
+ margin:0 auto;
+ border-radius: 5px;
+ background:#f8f8f8;
+ margin-top:50px;
+ 
+  }
+  
+  .footer {
+  width:80%;
+  position: absolute;
+  margin:0 auto;
+  border-radius: 5px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding:1rem;
+  background-color: #efefef;
+  text-align: center;
+  line-height: 8px;
+}
+
+#footertxt1{
+	padding-top:10px;
+}
+
+#footertxt2{
+	font-size:12px;
+}
