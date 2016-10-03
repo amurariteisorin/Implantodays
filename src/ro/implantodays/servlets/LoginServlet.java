@@ -27,6 +27,16 @@ public class LoginServlet extends HttpServlet {
         String user = request.getParameter("username");
         String pass = request.getParameter("password");
         
+        // Creating cookie for username
+        Cookie cookie = new Cookie("user",request.getParameter("username"));
+        
+        //set expiry date after 1 hour
+        cookie.setMaxAge(60*60);
+        
+        //adding cookie in the response header
+        response.addCookie(cookie);
+        
+        
         if(Validate.checkUser(user, pass))
         {
             RequestDispatcher rs = request.getRequestDispatcher("WelcomeServlet");
