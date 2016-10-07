@@ -35,7 +35,7 @@
         <li class="active"><a href="index.jsp">Acasa</a></li>
      
         <li><a href="#">Cursuri</a></li> 
-        <li><a href="#">Despre Noi</a></li> 
+        <li><a href="contact.jsp">Contact</a></li> 
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><p>Welcome <%= request.getCookies()[1].getValue() %></p> </li>
